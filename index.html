@@ -10,99 +10,97 @@
     <body>
 
       <form action="index.html" method="post">
-        
+        <div class="wrapper">
 
           <h1>the code review</h1>
+          
         <fieldset>
             <div class="center-p">
                     <legend>SignUp for our newsletter</legend>
                     <p> Get the latest news on how your code is doing right in your inbox</p>
             </div>
                     <hr class="style1">
-
           <legend>Contact Information</legend>
-          
+          <div class="justified">
+
+
           <label for="name">Full Name</label>
-          <input type="text" name="name" value="" id="name" placeholder="Required" required="">
-
+          <input type="text" name="name" value="" id="name" pattern="^[^0-9]+$" autocomplete="off" placeholder="Required" required>
+        </div>
+          <div class="justified">
           <label for="email">Email</label>
-          <input type="email" name="email" value="" id="email" placeholder="Required" required="">
-
-          
+          <input type="email" name="email" value="" id="email" autocomplete="off" placeholder="Required" required>
+        </div>
+          <div class="justified">
           <label for="number">Phone Number</label>
           <input type="Phone Number" id="number" name="user_number">
-
+        </div>
+          <div class="justified">
           <label for="city">City</label>
           <input type="city" id="city" name="user_city">
-
+        </div>
+          <div class="justified">
           <label for="state">State</label>
           <select id="state" name="user_state">
-
+          </div>
+            <div class="justified">
             <option value="">Choose state</option>
             <option value="new york">New York</option>
             <option value="alabama">Alabama</option>
             <option value="california">California</option>
           </select>
-
+        </div>
+          <div class="justified">
           <label for="code">Zip Code</label>
           <input type="code" id="code" name="user_code">
-        
+        </div>
+
         </fieldset>
         <hr>
+        <div class="news-padding">
         <h2 class="subtitle sub-form">Newsletter</h2>
 
         <label class="check-title">Select the newsletters you would like to recieve</label>
 
-        <label class="container">One
+        <label class="container">HTML News
           <input type="checkbox" checked="checked">
           <span class="checkmark"></span>
         </label>
         
-        <label class="container">Two
+        <label class="container">CSS News
           <input type="checkbox">
           <span class="checkmark"></span>
         </label>
         
-        <label class="container">Three
+        <label class="container">Javascript News
           <input type="checkbox">
           <span class="checkmark"></span>
         </label>
         
-        <label class="container">Four
-          <input type="checkbox">
-          <span class="checkmark"></span>
-        </label>
     
-        <h1>Custom Radio Buttons</h1>
-<label class="container-radio">One
-  <input type="radio" checked="checked" name="radio">
-  <span class="checkmark"></span>
-</label>
-<label class="container-radio">Two
-  <input type="radio" name="radio">
-  <span class="checkmark"></span>
-</label>
-<label class="container-radio">Three
-  <input type="radio" name="radio">
-  <span class="checkmark"></span>
-</label>
-<label class="container-radio">Four
-  <input type="radio" name="radio">
-  <span class="checkmark"></span>
-</label>
-<label for="state">How did</label>
-<select id="state" name="user_state">
+        <p>Newsletter format</p>
+        <label class="container-radio">HTML
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container-radio">Plain Text
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
 
-  <option value="">Choose state</option>
-  <option value="new york">New York</option>
-  <option value="alabama">Alabama</option>
-  <option value="california">California</option>
-</select>
+
+           <label for="text_area" class="last_label">Other topics you`d like to hear about </label>
+           <textarea name="textarea" id="text_area" cols="20" rows="5"></textarea>
+
+</div>
+      <div class="sign">
         <button>Sign Up</button>
       </form>
       <footer>
         Copyright The Code Review
       </footer>
+    </div>
+  </div>
     </body>
 </html>
 

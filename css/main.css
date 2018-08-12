@@ -11,7 +11,6 @@ body {
 
 form {
   margin: auto;
-  padding: 10px 20px;
   background: #f4f7f8;
   border-radius: 8px;
 }
@@ -27,6 +26,7 @@ h1:nth-of-type(1){
     text-align: center;
     padding: 20px 0 20px;
     font-size: 1.3rem;
+    background: #eee;
 }
 
 
@@ -42,13 +42,26 @@ select {
   font-size: 16px;
   height: auto;
   margin: 0;
-  outline: 0;
   padding: 15px;
   width: 100%;
   background-color: #e8eeef;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
+  outline: 0 none;
+}
+input[type="code"]{
+  width: 50%;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 30px auto 80px;
+  padding: 0px 10px;
+  border-radius: 8px;
+  
 }
 
 input[type="radio"],
@@ -75,6 +88,15 @@ button {
   border-width: 1px 1px 3px;
   box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
   margin-bottom: 10px;
+}
+
+input:focus { 
+  outline: none;
+  border: 1px solid #7bc1f7;
+  box-shadow: 0px 0px 8px #7bc1f7;
+  -moz-box-shadow: 0px 0px 8px #7bc1f7;
+  -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+
 }
 
 fieldset {
@@ -127,6 +149,11 @@ hr.style1 {
   box-shadow: 0 10px 10px -10px #8c8b8b inset;
   border-bottom: 2px solid black;
 }
+
+.news-padding{
+  padding: 3%;
+}
+
 
 /* Customize the label (the container) */
 .container {
@@ -259,12 +286,38 @@ border-radius: 50%;
 background: white;
 }
 
+      ::placeholder{
+        text-align:right;
+       }
+.sign{
+  text-align: center;
+}
 
-  input[type='text']{
-    text-align:right;
-    }
+.sign footer{
+  margin: 6% 0 40% 0;
+}
 
-    input[type='email']{
-      text-align:right;
-      }
-  
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+      max-width: 70%;
+  }
+
+
+  input[type="text"], input[type="email"], input[type="tel"], select#state {
+    width: 80%;
+    height: auto;
+}
+
+.justified{
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+}
+
+
+
+}
